@@ -11,25 +11,13 @@
 	alert('test main function execute success');
   }
 
-  // exec iframe function
-  function exec_iframe(){
-	if(typeof(exec_obj)=='undefined'){
-		exec_obj = document.createElement('iframe');
-		exec_obj.name = 'tmp_frame';
-		exec_obj.src = 'http://172.16.2.101:3000/c/execB.html';
-		exec_obj.style.display = 'none';
-		document.body.appendChild(exec_obj);
-	}else{
-		exec_obj.src = 'http://172.16.2.101:3000/c/execB.html?' + Math.random();
-	}
-  }
   </script>
 
  </head>
 
  <body>
   <p>A.html main</p>
-  <p><input type="button" value="exec iframe function" onclick="exec_iframe()"></p>
-  <iframe src="http://172.16.2.101:3000/c/B.html" name="myframe" width="500" height="100"></iframe>
+  <p>
+  <iframe src="http://www.bonjs.com/crossDomain/c/B.html" name="myframe" width="500" height="100"></iframe>
  </body>
 </html>
