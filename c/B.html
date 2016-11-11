@@ -14,11 +14,11 @@
 	if(typeof(exec_obj)=='undefined'){
 		exec_obj = document.createElement('iframe');
 		exec_obj.name = 'tmp_frame';
-		exec_obj.src = 'http://www.bonjs.com/crossDomain/c/execA.html';
+		exec_obj.src = 'http://www.my.com:3000/c/execA.html';
 		exec_obj.style.display = 'none';
 		document.body.appendChild(exec_obj);
 	}else{
-		exec_obj.src = 'http://www.bonjs.com/crossDomain/c/execA.html?' + Math.random();
+		exec_obj.src = 'http://www.my.com:3000/c/execA.html?' + Math.random();
 	}
   }
   </script>
