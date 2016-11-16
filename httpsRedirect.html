@@ -6,7 +6,12 @@
 </head>
 <body>
 	<script>
-		parent.indexFn();
+		
+		window.onload = function() {
+			console.log(parent);
+			parent.window.indexFn();
+		}
+		
 	</script>
 </body>
 </html>
